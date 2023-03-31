@@ -1,0 +1,16 @@
+/*
+ * Shop Shoes -> Tweb Project
+ * Merico Michele, matricola 945287
+ * Style sheet for the wishlist page
+ */
+#star-btn{
+    color:gold;
+}
+#products{
+    min-height: 400px;
+    margin-bottom: 40px;
+}
+#infoWishlist a{
+    text-decoration: none;
+    color: #358ED7;
+}

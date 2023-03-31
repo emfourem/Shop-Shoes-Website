@@ -1,0 +1,343 @@
+/*
+ * Shop Shoes -> Tweb Project
+ * Merico Michele, matricola 945287
+ * Style sheet for the singleProduct page
+ */
+.single_product{
+    margin-top: 50px;
+    height:100%;
+}
+.single_product .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+}
+/* Columns */
+.left-column {
+    width: 65%;
+    position: relative;
+}
+
+.right-column {
+    width: 35%;
+    margin-top: 15px;
+}
+/* Left Column */
+.left-column img {
+    margin-top: 120px;
+    padding-left: 20px;
+    width: 80%;
+    transition: all 0.3s ease;
+}
+.left-column img:hover {
+    transform: scale(1.1);
+    z-index: 0;
+}
+
+/* Product Description */
+.product-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+}
+.product-description span {
+    font-size: 12px;
+    color: #358ED7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.product-description h1 {
+    font-weight: 100;
+    font-size: 32px;
+    color: #43484D;
+    letter-spacing: -2px;
+}
+.product-description p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #86939E;
+    line-height: 24px;
+}
+/* Product Color */
+.product-color {
+    margin-bottom: 5px;
+}
+
+.color-choose div {
+    display: inline-block;
+}
+.singleInfo {
+    margin-bottom: 20px;
+}
+
+main button {
+    border: 2px solid #E1E8EE;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #5E6977;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .5s;
+    width: 160px;
+    height: 30px;
+}
+
+.singleInfo button:hover,
+.singleInfo button:active,
+.singleInfo button:focus {
+    border: 2px solid #86939E;
+    outline: none;
+}
+
+.allInfo {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+}
+.allInfo span{
+    color: #358ED7;
+}
+
+.allInfo a {
+    color: #358ED7;
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+    margin: 10px 0;
+    display: inline-block;
+}
+.allInfo a:before {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid rgba(53, 142, 215, 0.5);
+    display: inline-block;
+    text-align: center;
+    line-height: 16px;
+    opacity: 0.5;
+    margin-right: 5px;
+}
+/* Product Price */
+.product-price {
+    text-align: center;
+    display: inline-grid;
+    align-items: center;
+}
+
+.product-price span {
+    font-size: 26px;
+    font-weight: 300;
+    color: #43474D;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.product-price a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-btn {
+    width: 160px;
+    height: 30px;
+    display: inline-block;
+    background-color: #358ED7;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+}
+.cart-btn:hover {
+    background-color: blue;
+}
+.list{
+    width: 160px;
+    height: 30px;
+    background: transparent;
+    text-align: center;
+    border: 2px solid #E1E8EE;
+    border-radius: 6px;
+    color: #5E6977;
+}
+/* Responsive */
+@media (max-width: 940px) {
+    .container {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+
+    .left-column img {
+        width: 300px;
+        right: 0;
+        top: -65px;
+        left: initial;
+    }
+}
+
+@media (max-width: 535px) {
+    .left-column img {
+        width: 220px;
+        top: -85px;
+    }
+}
+/*Section main*/
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 150px;
+}
+.full-boxer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.comment-box{
+    width:500px;
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 3px 3px 25px darkslategray;
+}
+.comment-box:hover{
+    margin-top: 12px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile_image{
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 2px 30px darkslategray;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.profile_image i{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size:60px;
+    margin-top: 3px;
+}
+.Name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.Name strong{
+    color: black;
+    font-size: 18px;
+}
+.Name span{
+    color:gray;
+    margin-top: 2px;
+}
+#to_insert{
+    text-align: center;
+}
+.comment p{
+    color: black;
+}
+.comment .input-text{
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 90%;
+    height:50px
+}
+#send_comment{
+    font-size: 24px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+#send_comment:hover{
+    color: #5E6977;
+}
+.information {
+    border: 2px solid #E1E8EE;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #5E6977;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .5s;
+    width: 160px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 5px;
+}
+#sendSingle{
+    margin-top: 10px;
+}
+#comm{
+    border: none;
+    background-color: transparent ;
+}
+.socialsSend{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socialsSend li{
+    margin: 0 10px;
+}
+.socialsSend a{
+    text-decoration: none;
+    color: #358ED7;
+    padding: 5px;
+}
+.socialsSend a i{
+    font-size: 1.1rem;
+    width: 20px;
+}
+.socialsSend a:hover i{
+    color: blue;
+}
+#tosend{
+    visibility: hidden;
+}
+#p{
+    font-size: 14px;
+}
+#removed{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    height: 150px;
+}
+.section-title{
+    margin-top: 0;
+}
+#forRoot{
+    visibility: hidden;
+}
+#removeComment{
+    color: red;
+    margin-top: 10px;
+    font-size: 48px;
+}

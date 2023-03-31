@@ -1,0 +1,17 @@
+/*
+ * Shop Shoes -> Tweb Project
+ * Merico Michele, matricola 945287
+ */
+body{
+    background-image: url("../image/index.jpg");
+}
+h1,h2,h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+#login{
+    text-align: center;
+}
+#registration{
+    text-align: center ;
+}

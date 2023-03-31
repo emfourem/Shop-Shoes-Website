@@ -1,0 +1,202 @@
+/*
+ * Shop Shoes -> Tweb Project
+ * Merico Michele, matricola 945287
+ * Style sheet for insertProduct page
+ */
+.single_product{
+    margin-top: 50px;
+    height:100%;
+    margin-bottom: 100px;
+}
+.single_product .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+}
+/* Columns */
+.left-column {
+    width: 50%;
+    position: relative;
+}
+
+.right-column {
+    width: 50%;
+    margin-top: 15px;
+}
+/* Left Column */
+.left-column img {
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 80%;
+}
+
+/* Product Description */
+.product-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+}
+.product-description span {
+    font-size: 12px;
+    color: #358ED7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.product-description h1 {
+    font-weight: 100;
+    font-size: 32px;
+    color: #43484D;
+    letter-spacing: -2px;
+}
+.product-description p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #86939E;
+    line-height: 24px;
+}
+/* Product Color */
+.product-color {
+    margin-bottom: 5px;
+}
+.singleInfo {
+    margin-bottom: 10px;
+    display: block;
+    margin-top: 5px;
+}
+
+button {
+    width: 220px;
+    height: 50px;
+    display: inline-block;
+    background-color: #358ED7;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 30px;
+    margin-bottom: 50px;
+}
+
+.singleInfo button:hover,
+.singleInfo button:active,
+.singleInfo button:focus {
+    border: 2px solid #86939E;
+    outline: none;
+}
+
+.allInfo {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+    height: 70px;
+}
+.allInfo span{
+    color: #358ED7;
+}
+
+.allInfo a {
+    color: #358ED7;
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+    margin: 10px 0;
+    display: inline-block;
+}
+.allInfo a:before {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid rgba(53, 142, 215, 0.5);
+    display: inline-block;
+    text-align: center;
+    line-height: 16px;
+    opacity: 0.5;
+    margin-right: 5px;
+}
+/* Product Price */
+.product-price {
+    text-align: center;
+    display: inline-grid;
+    align-items: center;
+}
+
+.product-price span {
+    font-size: 26px;
+    font-weight: 300;
+    color: #43474D;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.product-price a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-btn {
+    width: 160px;
+    height: 30px;
+    display: inline-block;
+    background-color: #358ED7;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+}
+.cart-btn:hover {
+    background-color: blue;
+}
+.list{
+    width: 160px;
+    height: 30px;
+    background: transparent;
+    text-align: center;
+    border: 2px solid #E1E8EE;
+    border-radius: 6px;
+    color: #5E6977;
+}
+/* Responsive */
+@media (max-width: 940px) {
+    .container {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+
+    .left-column img {
+        width: 300px;
+        right: 0;
+        top: -65px;
+        left: initial;
+    }
+}
+
+@media (max-width: 535px) {
+    .left-column img {
+        width: 220px;
+        top: -85px;
+    }
+}
+form{
+    display: contents;
+}
+.toInsert input[type="text"]{
+    width: 300px;
+    height:30px;
+    font-size: 16px;
+}
+#addCorrectly{
+    text-align: center;
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+#insert:hover{
+    transform: scale(1.1);
+}

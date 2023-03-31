@@ -1,0 +1,91 @@
+/*
+ * Shop Shoes -> Tweb Project
+ * Merico Michele, matricola 945287
+ * Style sheet for the order page
+ */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+    min-height: 400px;
+}
+.full-boxer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.comment-box{
+    width:500px;
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 3px 3px 25px darkslategray;
+}
+.comment-box:hover{
+    transform: scale(1.1);
+    z-index: 0;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile_image{
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 2px 30px darkslategray;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile_image i{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size:30px;
+    margin-top: 20px;
+}
+.Name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.Name strong{
+    color: black;
+    font-size: 18px;
+}
+.Name span{
+    color:gray;
+    margin-top: 2px;
+}
+#to_insert{
+    text-align: center;
+}
+.comment {
+    display: list-item;
+    margin-bottom: 10px;
+}
+.comment p {
+    color: black;
+    float: left;
+}
+.fa.fa-info {
+    float: right;
+}
+.section-title{
+    font-size: 24px;
+}
+.section-title a{
+    text-decoration: none;
+}

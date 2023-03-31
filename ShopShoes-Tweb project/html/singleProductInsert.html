@@ -1,0 +1,70 @@
+<!--
+    Shop Shoes -> Tweb Project
+    Merico Michele, matricola 945287
+    Start of the complete product presentation section
+-->
+<section class="single_product">
+    <div class="container" id="container">
+        <form id="insertForm" enctype="multipart/form-data">
+            <div class='left-column'>
+                <img src="../image/shoes.jpg" alt="Insert an item">
+            </div>
+            <div class='right-column'>
+                <div class='product-description'>
+                    <span>Football Shoes</span>
+                    <h1>Insert new product</h1>
+                </div>
+                <div class='product-configuration'>
+                    <div class='allInfo'>
+                        <span>Image</span>
+                        <div class="toInsert">
+                            <input type="file" id="path" name="path" required="required">
+                        </div>
+                    </div>
+                    <div class='allInfo'>
+                        <span>Field</span>
+                        <div class="toInsert">
+                            <input type="radio" id="parquet" name="field" value="Parquet" required="required">
+                            <label for="parquet">Parquet</label>
+                            <input type="radio" id="artificial" name="field" value="Artificial grass">
+                            <label for="artificial">Artificial grass</label>
+                            <input type="radio" id="real" name="field" value="Real grass">
+                            <label for="real">Real grass</label>
+
+                        </div>
+                    </div>
+                    <div class='allInfo'>
+                        <span>Height Cleats</span>
+                        <div class='toInsert'>
+                            <input type="text" placeholder="Enter the height of the cleats(ex. 00.00)"
+                                   title="The required format is 'integer part.decimal part'.For each part max two numbers. For parquet indicate '0.0'"
+                                   pattern="\d{1,2}[\.]{1}\d{1,2}" id="height" name="height" required="required">
+                        </div>
+                    </div>
+                    <div class='allInfo'>
+                        <span>Material</span>
+                        <div class='toInsert'>
+                            <input type="radio" id="plastic" name="material" value="Plastic" required="required">
+                            <label for="plastic">Plastic</label>
+                            <input type="radio" id="leather" name="material" value="Leather">
+                            <label for="leather">Leather</label>
+                            <input type="radio" id="imitation" name="material" value="Imitation leather">
+                            <label for="imitation">Imitation leather</label>
+                        </div>
+                    </div>
+                    <div class='allInfo'>
+                        <span>Price</span>
+                        <div class='toInsert'>
+                            <input type="text" placeholder="Enter the price of the shoes(ex. 100.00)"
+                                   title="The required format is 'integer part.decimal part'.For decimal part max two numbers"
+                                   pattern="\d{1,6}[\.]{1}\d{1,2}" id="price" name="price" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class='product-price'>
+                    <button type="submit" class="button" id="insert">INSERT</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

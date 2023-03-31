@@ -1,0 +1,16 @@
+/*
+ * Shop Shoes -> Tweb Project
+ * Merico Michele, matricola 945287
+ * Style sheet for the login page
+ */
+body{
+    background-image: url("../image/login.jpg");
+}
+p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+a{
+    color: cadetblue;
+}

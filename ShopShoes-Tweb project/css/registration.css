@@ -1,0 +1,14 @@
+/*
+ * Shop Shoes -> Tweb Project
+ * Merico Michele, matricola 945287
+ * Style sheet for the registration page
+ */
+body{
+    background-image: url("../image/registration.jpg");
+}
+p{
+    text-align: center;
+}
+a{
+    color: cadetblue;
+}

@@ -1,1 +1,1 @@
-Da completare..(come si compila, come installare il db)
+Progetto relativo al corso di Teconologie Web.
